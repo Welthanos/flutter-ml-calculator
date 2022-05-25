@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  static const Color darkColor = Color.fromRGBO(82, 82, 82, 1);
-  static const Color defaultColor = Color.fromRGBO(112, 112, 112, 1);
-  static const Color operationColor = Color.fromRGBO(250, 158, 13, 1);
+  static const Color darkColor = Color.fromARGB(255, 0, 47, 94);
+  static const Color defaultColor = Color.fromARGB(255, 0, 74, 143);
+  static const Color operationColor = Color.fromARGB(255, 0, 0, 0);
 
   final String text;
   final bool doubleSize;
@@ -43,13 +43,16 @@ class Button extends StatelessWidget {
         child: Text(
           text,
           style: const TextStyle(
-            color: Colors.white,
+            color: Color.fromARGB(255, 211, 211, 211),
             fontSize: 32,
-            fontWeight: FontWeight.w200,
+            fontWeight: FontWeight.w300,
           ),
         ),
         style: ElevatedButton.styleFrom(
           primary: color,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(0),
+          ),
         ),
       ),
     );

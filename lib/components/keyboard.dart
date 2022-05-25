@@ -10,7 +10,8 @@ class Keyboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      color: Colors.black,
       height: 500,
       child: Column(
         children: [
@@ -21,6 +22,7 @@ class Keyboard extends StatelessWidget {
               Button.operation(text: "/", cb: cb),
             ],
           ),
+          const SizedBox(height: 1),
           ButtonRow(
             buttons: [
               Button(text: "7", cb: cb),
@@ -29,6 +31,7 @@ class Keyboard extends StatelessWidget {
               Button.operation(text: "x", cb: cb),
             ],
           ),
+          const SizedBox(height: 1),
           ButtonRow(
             buttons: [
               Button(text: "4", cb: cb),
@@ -37,6 +40,7 @@ class Keyboard extends StatelessWidget {
               Button.operation(text: "-", cb: cb),
             ],
           ),
+          const SizedBox(height: 1),
           ButtonRow(
             buttons: [
               Button(text: "1", cb: cb),
@@ -45,6 +49,7 @@ class Keyboard extends StatelessWidget {
               Button.operation(text: "+", cb: cb),
             ],
           ),
+          const SizedBox(height: 1),
           ButtonRow(
             buttons: [
               Button.doubleSize(text: "0", cb: cb),
