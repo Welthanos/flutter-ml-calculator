@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  static const Color darkColor = Color.fromARGB(255, 0, 47, 94);
-  static const Color defaultColor = Color.fromARGB(255, 0, 74, 143);
+  static const Color darkColor = Color.fromARGB(255, 12, 33, 90);
+  static const Color defaultColor = Color.fromARGB(255, 25, 68, 185);
   static const Color operationColor = Color.fromARGB(255, 0, 0, 0);
 
   final String text;
@@ -51,7 +51,7 @@ class Button extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           primary: color,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(0),
+            borderRadius: BorderRadius.circular(30),
           ),
         ),
       ),

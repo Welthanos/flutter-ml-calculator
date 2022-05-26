@@ -51,8 +51,6 @@ class Memory {
       _operation = isEqualSign ? null : newOperation;
       _bufferIndex = isEqualSign ? 0 : 1;
     }
-
-    _wipeValue = true; // !isEqualSign;
   }
 
   _addDigit(String digit) {
